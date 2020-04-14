@@ -90,7 +90,9 @@ function getCookie(req, key){
 function getRandomWeightedURL(weight){
   weight = weight || 0.5
   const num =  Math.random();
-  return num<=weight?1:0;
+  console.log(num);
+  
+  return num<weight?1:0;
 }
 
 // My verbose data nvm
